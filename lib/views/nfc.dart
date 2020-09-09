@@ -43,7 +43,7 @@ class _NFCReaderState extends State {
                 preferredSize: Size.fromHeight(45.0),
                 child: new AppBar(
                   title: Text(
-                    "Test Application",
+                    "Test Application For NFC",
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   backgroundColor: Color(0xFF344789),
