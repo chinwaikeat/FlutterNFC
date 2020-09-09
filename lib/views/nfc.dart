@@ -30,7 +30,7 @@ class _NFCReaderState extends State {
   Widget build(BuildContext context) {
     if (!_supportsNFC) {
       return RaisedButton(
-        child: const Text("You device does not support NFC"),
+        child: const Text("You device does not support NFC "),
         onPressed: null,
       );
     }
