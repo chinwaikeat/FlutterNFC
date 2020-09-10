@@ -12,7 +12,7 @@ class NFCReader extends StatefulWidget {
 class _NFCReaderState extends State {
   bool _supportsNFC = false;
   bool _reading = false;
-  var testSring = "";
+  var testString = "";
   StreamSubscription<NDEFMessage> _stream;
 
   @override
@@ -65,7 +65,6 @@ class _NFCReaderState extends State {
                             _stream?.cancel();
                             setState(() {
                               _reading = false;
-                              testSring = "start";
                             });
                           } else {
                             setState(() {
@@ -77,17 +76,16 @@ class _NFCReaderState extends State {
                                 throwOnUserCancel: false,
                               )
                                   .listen((NDEFMessage message) {
-                                testSring = message.payload;
+                                testString = message.payload;
                                 print("read NDEF message: ${message.payload}");
                               }, onError: (e) {
-                                print("ttttttt");
                                 print("read NDEF message: ${e.toString()}");
                               });
                             });
                           }
                         }),
                     Text(
-                      "text = " + testSring,
+                      "text = " + testString,
                       style: TextStyle(color: Colors.grey[600]),
                     )
                   ],
