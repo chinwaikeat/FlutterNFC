@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'views/nfc.dart';
+import 'views/screens/splashScreenPage/splashScreen.dart';
 
 void main() {
   ErrorWidget.builder = (FlutterErrorDetails details) => new Material(
@@ -46,7 +47,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: NFCReader(),
+      home: SplashScreen(),
     );
   }
 }

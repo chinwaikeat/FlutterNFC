@@ -31,9 +31,10 @@ dependencies:
   cupertino_icons: ^0.1.3
 
 dev_dependencies:
-  nfc_in_flutter: ^2.0.5
   flutter_test:
     sdk: flutter
+  nfc_in_flutter: ^2.0.5
+  package_info: ^0.4.0+4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -41,10 +42,18 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
 
+  assets:
+    - lib/assets/img/
+
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  fonts:
+    - family: icomoon
+      fonts:
+        - asset: fonts/icomoon.ttf
 
   # To add assets to your application, add an assets section, like this:
   # assets:
