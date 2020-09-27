@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:nfc_for_phone/views/screens/login/login.dart';
 import 'package:package_info/package_info.dart';
-import 'package:nfc_for_phone/views/parts/bottomNavigation.dart';
+//import 'package:nfc_for_phone/views/parts/bottomNavigation.dart';
+import 'package:nfc_for_phone/views/parts/navigationDrawer.dart';
+import 'package:nfc_for_phone/views/screens/login.dart';
 
 class SplashScreen extends StatefulWidget {
   SplashScreen();
@@ -30,10 +33,18 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   validatePage() {
+    // Timer(
+    //     Duration(seconds: 3),
+    //     () => Navigator.pushReplacement(context,
+    //         MaterialPageRoute(builder: (context) => BottomNavigation())));
+    // Timer(
+    //     Duration(seconds: 3),
+    //     () => Navigator.pushReplacement(context,
+    //         MaterialPageRoute(builder: (context) => NavigationDrawer())));
     Timer(
         Duration(seconds: 3),
         () => Navigator.pushReplacement(context,
-            MaterialPageRoute(builder: (context) => BottomNavigation())));
+            MaterialPageRoute(builder: (context) => LoginScreen())));
   }
 
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nfc_for_phone/views/screens/message/messageScreen.dart';
-import 'package:nfc_for_phone/views/screens/mainPage/mainScreen.dart';
+import 'package:nfc_for_phone/views/screens/main/mainScreen.dart';
 
 class BottomNavigation extends StatefulWidget {
   BottomNavigation();

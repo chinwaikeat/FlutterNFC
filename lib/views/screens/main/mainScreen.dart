@@ -38,20 +38,20 @@ class _MainScreenState extends State<MainScreen> {
         //onWillPop: () => Future.value(false),
 
         child: Scaffold(
-            appBar: PreferredSize(
-                preferredSize: Size.fromHeight(45.0),
-                child: new AppBar(
-                  title: Text(
-                    "Test Application For NFC",
-                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  ),
-                  backgroundColor: Color(0xFF344789),
-                  elevation: 0.0,
-                  actions: <Widget>[
-                    new Icon(Icons.dashboard, color: Colors.transparent),
-                    new Icon(Icons.dashboard, color: Colors.transparent),
-                  ],
-                )),
+            // appBar: PreferredSize(
+            //     preferredSize: Size.fromHeight(45.0),
+            //     child: new AppBar(
+            //       title: Text(
+            //         "Test Application For NFC",
+            //         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            //       ),
+            //       backgroundColor: Color(0xFF344789),
+            //       elevation: 0.0,
+            //       actions: <Widget>[
+            //         new Icon(Icons.dashboard, color: Colors.transparent),
+            //         new Icon(Icons.dashboard, color: Colors.transparent),
+            //       ],
+            //     )),
             body: new Container(
                 height: MediaQuery.of(context).size.height,
                 child: Column(

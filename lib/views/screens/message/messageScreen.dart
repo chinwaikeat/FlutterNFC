@@ -25,20 +25,20 @@ class _MessageScreenState extends State<MessageScreen> {
 
     body = Scaffold(
         resizeToAvoidBottomPadding: false,
-        appBar: PreferredSize(
-            preferredSize: Size.fromHeight(45.0),
-            child: AppBar(
-              brightness: Brightness.light,
-              title: Text(
-                "Message",
-                style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.black,
-                    fontWeight: FontWeight.bold),
-              ),
-              backgroundColor: Colors.white,
-              centerTitle: true,
-            )),
+        // appBar: PreferredSize(
+        //     preferredSize: Size.fromHeight(45.0),
+        //     child: AppBar(
+        //       brightness: Brightness.light,
+        //       title: Text(
+        //         "Message",
+        //         style: TextStyle(
+        //             fontSize: 18,
+        //             color: Colors.black,
+        //             fontWeight: FontWeight.bold),
+        //       ),
+        //       backgroundColor: Colors.white,
+        //       centerTitle: true,
+        //     )),
         body: new Container(
             child: ListView(
           children: <Widget>[
@@ -52,7 +52,7 @@ class _MessageScreenState extends State<MessageScreen> {
                         padding: EdgeInsets.only(top: 280),
                         child: Column(children: <Widget>[
                           Text(
-                            "No Record",
+                            "Message Page",
                             style: TextStyle(color: Colors.grey[600]),
                           )
                         ]))

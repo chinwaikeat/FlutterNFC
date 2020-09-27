@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'views/nfc.dart';
-import 'views/screens/splashScreenPage/splashScreen.dart';
+import 'views/screens/splash/splashScreen.dart';
 
 void main() {
   ErrorWidget.builder = (FlutterErrorDetails details) => new Material(

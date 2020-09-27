@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:nfc_for_phone/views/parts/navigationDrawer.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen();
@@ -52,7 +53,7 @@ class LoginScreenState extends State<LoginScreen> {
 
     final Map<int, Widget> logoWidgets = <int, Widget>{
       0: Text("Email Login", style: TextStyle(fontSize: 14)),
-      1: Text("Phone No Login", style: TextStyle(fontSize: 14)),
+      1: Text("Phone Login", style: TextStyle(fontSize: 14)),
     };
 
     body = new SingleChildScrollView(
@@ -71,7 +72,12 @@ class LoginScreenState extends State<LoginScreen> {
                   Icons.language,
                   size: 35,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NavigationDrawer()));
+                },
               ),
               new SizedBox(
                 width: 10.0,
@@ -89,7 +95,7 @@ class LoginScreenState extends State<LoginScreen> {
           ),
           new Text(
             "Welcome",
-            style: new TextStyle(fontSize: 22.0),
+            style: new TextStyle(fontSize: 22.0, fontWeight: FontWeight.bold),
           ),
           new SizedBox(
             height: 20.0,
